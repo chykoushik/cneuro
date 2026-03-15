@@ -67,23 +67,13 @@ Events were marked manually in mm:ss format.
 - Go to https://julialang.org/downloads
 - Download and install the latest stable release for your OS
 
-**Step 2 - Download VS Code**
-- Go to https://code.visualstudio.com
-- Download and install
-
-**Step 3 - Install Julia extension in VS Code**
-- Open VS Code
-- Go to Extensions (Ctrl + Shift + X)
-- Search "Julia"
-- Install the one by julialang
-
-**Step 4 - Clone this repository**
+**Step 2 - Clone this repository**
 ```
 git clone https://github.com/chykoushik/cneuro.git
 cd cneuro
 ```
 
-**Step 5 - Install required Julia packages**
+**Step 3 - Install required Julia packages**
 
 Open Julia terminal and run:
 ```julia
