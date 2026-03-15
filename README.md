@@ -1,6 +1,6 @@
 # CNeuro
 
-EEG analysis of readiness potential (RP) and contingent negative variation (CNV) 
+EEG analysis of readiness potential (RP) and contingent negative variation (CNV)
 recorded during a naturalistic driving simulation.
 
 ## Equipment
@@ -56,19 +56,57 @@ Events were marked manually in mm:ss format.
 | `outputs_julia/` | All output figures and CSV files |
 | `cneuro.pdf` | Full report with figures |
 
-## How to Run
+## Requirements
 
-Install Julia and required packages:
+- Julia 1.12 or higher
+- VS Code with Julia extension
+
+## Installation
+
+**Step 1 - Download Julia**
+- Go to https://julialang.org/downloads
+- Download and install the latest stable release for your OS
+
+**Step 2 - Download VS Code**
+- Go to https://code.visualstudio.com
+- Download and install
+
+**Step 3 - Install Julia extension in VS Code**
+- Open VS Code
+- Go to Extensions (Ctrl + Shift + X)
+- Search "Julia"
+- Install the one by julialang
+
+**Step 4 - Clone this repository**
+```
+git clone https://github.com/chykoushik/cneuro.git
+cd cneuro
+```
+
+**Step 5 - Install required Julia packages**
+
+Open Julia terminal and run:
 ```julia
 ] add CSV DataFrames DSP FFTW Plots Statistics DelimitedFiles
 ```
 
-Run the analysis:
+## Usage
+
+**Step 1 - Update the path in config.jl**
+
+Open `config.jl` and change this line to your local path:
+```julia
+const BASE_PATH = "C:\\Users\\YourName\\Desktop\\cneuro"
+```
+
+**Step 2 - Run the analysis**
 ```
 julia main.jl
 ```
 
-Output figures saved to `outputs_julia/` folder.
+**Step 3 - View outputs**
+
+All figures and CSV files are saved to `outputs_julia/` folder.
 
 ## Language
 Julia 1.12.5
@@ -76,11 +114,8 @@ Julia 1.12.5
 
 ---
 
-To add it to your repo:
-1. Open `README.md` in VS Code
-2. Replace everything with the above
-3. Then run:
+Copy this into `README.md` then run:
 ```
 git add README.md
-git commit -m "add readme"
+git commit -m "update readme with installation guide"
 git push
