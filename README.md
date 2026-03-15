@@ -59,7 +59,6 @@ Events were marked manually in mm:ss format.
 ## Requirements
 
 - Julia 1.12 or higher
-- VS Code with Julia extension
 
 ## Installation
 
@@ -99,13 +98,12 @@ julia main.jl
 All figures and CSV files are saved to `outputs_julia/` folder.
 
 ## Language
+
 Julia 1.12.5
 ```
 
----
-
-Copy this into `README.md` then run:
+Then run:
 ```
 git add README.md
-git commit -m "update readme with installation guide"
+git commit -m "fix readme"
 git push
