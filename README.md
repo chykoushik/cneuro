@@ -113,7 +113,7 @@ Events were marked manually in mm:ss format.
 | `functions.jl` | Filters, epoching, baseline, plotting |
 | `main.jl` | Main analysis script |
 | `outputs_julia/` | All output figures and CSV files |
-| `cneuro.pdf` | Full report with figures |
+| `cneuro.pdf` | Report with figures (without description) |
 
 ## Requirements
 - Julia 1.12 or higher
